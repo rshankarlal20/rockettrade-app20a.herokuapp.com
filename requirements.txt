@@ -5,3 +5,4 @@ pandas==1.2.4
 prophet==1.0.1
 yfinance==0.1.63
 pystan==2.19.1.1
+cython ==0.29.23
