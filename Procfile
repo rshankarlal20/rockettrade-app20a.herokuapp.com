@@ -1,2 +1,2 @@
 web: sh setup.sh && streamlit run main.py
-web: gunicorn app:app
+web: gunicorn app:rockettrade-pred
