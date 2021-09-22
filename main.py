@@ -42,7 +42,7 @@ TODAY = date.today().strftime("%Y-%m-%d")
 
 st.title('Stock Prediction App - Algorithm Trading')
 
-stocks = ('GOOG', 'AAPL', 'MSFT', 'RPOWER.NS', 'HAPPSTMNDS.NS' ,'APLAPOLLO.NS', 'TATAMOTORS.NS', 'GE', 'RELIANCE.NS', 'CAPLIPOINT.NS', 'TATACHEM.NS', 'TATAPOWER.NS', 'MOTHERSUMI.NS', 'ICICIBANK.NS', 'ZOMATO.NS', 'SBIN.NS', 'TATAELXSI.NS', 'AMARAJABAT.NS', 'EXIDEIND.NS', 'DLF.NS')
+stocks = ('GOOG', 'AAPL', 'MSFT', 'AMZN', 'RPOWER.NS', 'HAPPSTMNDS.NS', 'TATAMOTORS.NS', 'GE', 'RELIANCE.NS', 'CAPLIPOINT.NS', 'TATACHEM.NS', 'TATAPOWER.NS', 'MOTHERSUMI.NS', 'ICICIBANK.NS', 'ZOMATO.NS', 'SBIN.NS', 'TATAELXSI.NS', 'AMARAJABAT.NS', 'EXIDEIND.NS', 'DLF.NS')
 selected_stock = st.selectbox('Select dataset for prediction', stocks)
 
 n_years = st.slider('Years of prediction:', 1, 4)
@@ -62,6 +62,7 @@ data_load_state.text('Loading real life data from Web... done!')
 
 st.subheader('Raw data')
 st.write(data.tail())
+#st.write(data.head())
 
 # Plot raw data
 def plot_raw_data():
@@ -85,6 +86,7 @@ forecast = m.predict(future)
 # Show and plot forecast
 st.subheader('Forecast data')
 st.write(forecast.tail())
+#st.write(forecast.head())
     
 st.write(f'Forecast plot for {n_years} years')
 fig1 = plot_plotly(m, forecast)
