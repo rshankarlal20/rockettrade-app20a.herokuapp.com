@@ -42,7 +42,7 @@ TODAY = date.today().strftime("%Y-%m-%d")
 
 st.title('Stock Prediction App - Algorithm Trading')
 
-stocks = ('GOOG', 'AAPL', 'MSFT', 'AMZN', 'RPOWER.NS', 'HAPPSTMNDS.NS' ,'APLAPOLLO.NS', 'TATAMOTORS.NS', 'GE', 'RELIANCE.NS', 'CAPLIPOINT.NS', 'TATACHEM.NS', 'TATAPOWER.NS', 'MOTHERSUMI.NS', 'ICICIBANK.NS', 'ZOMATO.NS', 'SBIN.NS', 'TATAELXSI.NS', 'AMARAJABAT.NS', 'EXIDEIND.NS', 'DLF.NS')
+stocks = ('GOOG', 'AAPL', 'MSFT', 'AMZN', 'RPOWER.NS', 'HAPPSTMNDS.NS' ,'APLAPOLLO.NS', 'DEEPAKNTR.NS','TATAMOTORS.NS', 'GE', 'RELIANCE.NS', 'CAPLIPOINT.NS', 'TATACHEM.NS', 'TATAPOWER.NS', 'MOTHERSUMI.NS', 'ICICIBANK.NS', 'ZOMATO.NS', 'SBIN.NS', 'TATAELXSI.NS', 'AMARAJABAT.NS', 'EXIDEIND.NS', 'DLF.NS')
 selected_stock = st.selectbox('Select dataset for prediction', stocks)
 
 n_years = st.slider('Years of prediction:', 1, 4)
